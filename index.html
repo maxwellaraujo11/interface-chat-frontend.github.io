@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONS FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofGJl5OD4QkF5tr5BkNTQq5T2tE2nI5fD" crossorigin="anonymous">
+    <!-- FIM ICONS FONT AWESOME-->
+    <!-- CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Chat-bolt</title>
+</head>
+<body>
+
+<!-- ICONE COM FUNÇÃO DE ABRIR MENU, FICARÁ OCUTO ENQUANTO DESKTOP-->
+<i class="fa-solid fa-bars open-menu" onclick="openMobile()"></i>
+
+<!-- ARERA MENU MOBILE, O MENU FICARÁ COM DISPLAY NONE QUANDO ESTIVER EM DESKTOP-->
+<div class="menu-mobile">
+    <div class="top-title">
+        <i class="fa-solid fa-xmark close-menu-mobile" onclick="closeMobile()"></i> 
+        <h2 class="logo">LOGO</h2>
+    </div>
+    
+    <div class="item-menu">
+        <a href="">
+            <i class="fa-solid fa-house icon-menu-desktop"></i>
+            <h3>Home</h3>
+        </a>
+    </div>
+
+    <div class="item-menu">
+        <a href="">
+            <i class="fa-solid fa-share-nodes icon-menu-desktop"></i>
+            <h3>Rede Sociais</h3>
+        </a>
+    </div>
+
+    <div class="item-menu">
+        <a href="">
+            <i class="fa-solid fa-bell icon-menu-desktop"></i>
+            <h3>Notificações</h3>
+        </a>
+    </div>
+
+    <div class="item-menu">
+        <a href="">
+            <i class="fa-solid fa-spell-check icon-menu-desktop"></i>
+            <h3>Dicionario</h3>
+        </a>
+    </div>
+
+    <div class="item-menu">
+        <a href="">
+            <i class="fa-solid fa-lightbulb icon-menu-desktop"></i>
+            <h3>Serviços</h3>
+        </a>
+    </div>
+
+    <hr>
+
+    <div class="item-menu">
+        <a href="">
+            <i class="fa-solid fa-right-from-bracket icon-menu-desktop"></i>
+            <h3>Sair</h3>
+        </a>
+    </div>
+
+    <div class="item-menu">
+        <a href="">
+            <i class="fa-solid fa-gears icon-menu-desktop"></i>
+            <h3>Configurações</h3>
+        </a>
+    </div>
+</div> <!-- FIM MENU MOBILE-->
+
+<!-- ----------- AREA DE MENSAGENS E CAMPO DE TEXTO --------------------- -->
+<main>
+ <div class="mensagens" id="">
+
+    <!-- Usei essas tag <P> apenas para textar o Scroll Bar-->
+   <div class="user"><i class="fa-solid fa-user"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </div>
+   <div class="chat"><i class="fa-solid fa-user"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </div>
+
+   <div class="user"><i class="fa-solid fa-user"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </div>
+   <div class="chat"><i class="fa-solid fa-user"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </div>
+   
+   <div class="user"><i class="fa-solid fa-user"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </div>
+   <div class="chat"><i class="fa-solid fa-user"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </div>
+   
+   <div class="user"><i class="fa-solid fa-user"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </div>
+   <div class="chat"><i class="fa-solid fa-user"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </div>
+   
+   <div class="user"><i class="fa-solid fa-user"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </div>
+   <div class="chat"><i class="fa-solid fa-user"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </div>
+
+   <div class="user"><i class="fa-solid fa-user"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </div>
+   <div class="chat"><i class="fa-solid fa-user"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </div>
+   
+
+   <div class="user"><i class="fa-solid fa-user"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </div>
+   <div class="chat"><i class="fa-solid fa-user"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </div>
+   
+ </div> <!-- DIV MENSAGENS-->
+ <div class="campo-texto">
+
+    <textarea name="" id="" placeholder="Mensagens" cols="40" rows="2"></textarea>
+    <div class="icones-input">
+        <i class="fa-solid fa-paperclip clip"></i>
+        <i class="fa-regular fa-face-smile emogi"></i>
+        <i class="fa-regular fa-paper-plane icone-envio-msg"></i>
+    </div>
+</div> <!-- FIM CAMPO-TEXTO-->
+</main>
+
+<!-- --------------- AREA DO MENU LATERAL, ESSE MENU FICARÁ OCUTO QUANDO ESTIVER EM DISPOSITIVOS COM TELAS MENORES.
+                    LOGO APARECERÁ O ICONE DO MENU MOBILE, O QUAL ABRE O MENU EM TELAS MENORES.     ------------------------------------- -->
+
+<aside>
+    <div class="menu-desktop">
+        <div class="top-title">
+            <i class="fa-solid fa-bars icon-menu-desktop"></i> 
+            <h2>LOGO</h2>
+        </div>
+        
+        <div class="item-menu">
+            <a href="">
+                <i class="fa-solid fa-share-nodes icon-menu-desktop"></i>
+                <h3>Contatos</h3>
+            </a>
+        </div>
+
+        <div class="item-menu">
+            <a href="">
+                <i class="fa-solid fa-bell icon-menu-desktop"></i>
+                <h3>Notificações</h3>
+            </a>
+        </div>
+
+        <div class="item-menu">
+            <a href="">
+                <i class="fa-solid fa-spell-check icon-menu-desktop"></i>
+                <h3>Dicionario</h3>
+            </a>
+        </div>
+
+        <div class="item-menu">
+            <a href="">
+                <i class="fa-solid fa-lightbulb icon-menu-desktop"></i>
+                <h3>Serviços</h3>
+            </a>
+        </div>
+
+        <hr>
+
+        <div class="item-menu">
+            <a href="">
+                <i class="fa-solid fa-right-from-bracket icon-menu-desktop"></i>
+                <h3>Sair</h3>
+            </a>
+        </div>
+
+        <div class="item-menu">
+            <a href="">
+                <i class="fa-solid fa-gears icon-menu-desktop"></i>
+                <h3>Configurações</h3>
+            </a>
+        </div>
+        
+    </div> <!-- FIM MENU DESKTOP-->
+</aside>
+
+<script src="https://kit.fontawesome.com/d9ff222a5f.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
